@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #edddd4;
+}
+li,
+a,
+button {
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #3c3c3c;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.nav__links {
+  list-style: none;
+}
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover {
+  color: #c1839f;
+}
+button {
+  padding: 9px 25px;
+  background-color: #087e8b;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: #f5f5f5;
+}
+button:hover {
+  background-color: rgb(18, 136, 149);
+}
+.flexbox-container {
+  display: flex;
+  padding: 50px 20%;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+
+.titlename {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+.center-paragraph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20%;
+}
+h2 {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 25px;
+  line-height: 1.6;
+}
+h3 {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 20spx;
+  line-height: 1.6;
+}
+p {
+  font-family: "Roboto Mono", sans-serif;
+  line-height: 1.6;
+}
+.four-col {
+  display: flex;
+  padding: 50px 20%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.box-1 {
+  flex-grow: 1;
+  max-width: 200px;
+}
+.box-2 {
+  flex-grow: 1;
+  max-width: 200px;
+}
+.box-3 {
+  flex-grow: 1;
+  max-width: 200px;
+}
+.box-4 {
+  max-width: 200px;
+}
+
+.flex-paragraph {
+  max-width: 500px;
+}
+@media screen and (max-width: 1000px) {
+  .item-image {
+    width: 100%;
+    height: auto;
+  }
+  .flex-paragraph {
+    max-width: 100%;
+  }
+}
